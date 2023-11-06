@@ -1,0 +1,310 @@
+pyramid 1:
+
+public class Demo{
+	public static void main(String[]args) {
+	
+		 int rows = 9;
+	        for (int i = 1; i <= rows; i++) {
+	            for (int j = 1; j <= rows - i; j++) {
+	                System.out.print(" ");
+	            }
+	            for (int k = 1; k <= 2 * i - 1; k++) {
+	                System.out.print(i);
+	            }
+	            System.out.println();
+		}
+
+Pyramid 2:
+
+public class Demo{
+	public static void main(String[]args) {
+	
+		 int rows = 9;
+	        for (int i = rows; i >=1; i--) {
+	            for (int j = 1; j <= rows-i; j++) {
+	                System.out.print(" ");
+	            }
+            for (int k = 1; k <= 2 * i - 1; k++) {
+	                System.out.print(i);
+	            }
+	            System.out.println();
+		}
+	}
+}
+
+Pyramid 3:
+
+public class Demo{
+	public static void main(String[]args) {
+	
+		 int rows = 9;
+	        for (int i = rows; i >=1; i--) {
+	            for (int j = 1; j <= rows-i; j++) {
+	                System.out.print(" ");
+	            }
+            for (int k = 1; k <= 2 * i - 1; k++) {
+	                System.out.print("*");
+	            }
+	            System.out.println();
+		}
+	}
+}
+
+Pyramid 4:
+
+public class RightDecreasingPattern {
+	public static void main(String[] args) {
+		int rows = 9;
+		for (int i = 1; i <= rows; i++) {
+			for (int j = 1; j < i; j++) {
+				System.out.print("  ");
+			}
+			for (int k = i; k <= rows; k++) {
+				System.out.print(k + " ");
+			}
+			for (int k = rows - 1; k >= i; k--) {
+				System.out.print(k + " ");
+			}
+			System.out.println();
+		}
+	}
+}
+
+Pyramid 5:
+
+public class RightDecreasingPattern {
+	public static void main(String[] args) {
+		int rows = 9;
+		for (int i = 1; i <= rows; i++) {
+			for (int j = i; j < rows; j++) {
+				System.out.print("  ");
+			}
+			for (int k= 1;  k<=i; k++) {
+				System.out.print(k+" ");
+			}
+	for (int k =i- 1; k >=1; k--) {
+			System.out.print(k + " ");
+		}
+			System.out.println();
+		}
+	}
+}
+
+
+Pyramid 6:
+
+public class Demo{
+	public static void main(String[]args) {
+	
+		 int rows = 9;
+		 int count =1;
+	        for (int i = 1; i <= rows; i++) {
+	        	  for (int k = i; k <=rows; k++) {
+		                System.out.print(" ");
+		            }
+	           
+	            for (int k = 1; k <=i; k++) {
+	                System.out.print("*"+" ");
+	            }
+	            System.out.println();
+	           count++;
+		}
+	}
+}
+
+Pyramid 7:
+
+public class Demo{
+	public static void main(String[]args) {
+	
+		 int rows = 9;
+		 int count =1;
+	        for (int i = 1; i <= rows; i++) {
+	        	  for (int k = i; k <=rows; k++) {
+		                System.out.print(" ");
+		            }
+	           
+	            for (int k = 1; k <=i; k++) {
+	                System.out.print(k+" ");
+	            }
+	            System.out.println();
+	           count++;
+		}
+	}
+}
+
+
+pattern 1:
+
+public class Demo{
+	public static void main(String[]args) {
+		 int rows = 5;
+	        for (int i = 1; i <= rows; i++) {
+    	  for (int j = 1; j <=rows; j++) {      	           
+	          if(i==1||i==j||j==rows) {
+	        	  System.out.print("*");
+	          }else           
+	            System.out.print("  ");         
+		}
+    	  System.out.println();
+        	  }
+
+Pattern 2:
+
+public class Demo{
+	public static void main(String[]args) {
+		 int rows = 5;
+	        for (int i = 1; i <= rows; i++) {
+    	  for (int j = 1; j <=rows; j++) {      	           
+	          if(i==1||i+j==rows+1||j==1) {
+	        	  System.out.print("*");
+	          }else           
+	            System.out.print(" ");         
+		}
+    	  System.out.println();
+        	  }
+
+pattern 3:
+
+public class Demo{
+	public static void main(String[]args) {
+		Scanner sc = new Scanner(System.in);
+		 int rows = sc.nextInt();
+		 
+	        for (int i = 1; i <= rows; i++) {
+    	  for (int j = 1; j <=rows; j++) { 
+    		  if(i<=5)
+	          if(i==1||i+j==10||i==j) {
+	        	  System.out.print(" *");
+	          }else           
+	            System.out.print("  ");         
+		}
+    	  System.out.println();
+        	  }
+
+pattern 4:
+
+   public class Demo{
+	public static void main(String[]args) {
+		Scanner sc = new Scanner(System.in);
+		 int rows = sc.nextInt();
+		 
+	        for (int i = 1; i <= rows; i++) {
+    	  for (int j = 1; j <=rows; j++) { 
+    		  if(i>=5)
+	          if(i==9||i+j==10||i==j) {
+	        	  System.out.print(" *");
+	          }else           
+	            System.out.print("  ");         
+		}
+    	  System.out.println();
+        	  }
+
+pattern 5:
+
+public class Pattern{
+	public static void main(String[] args) {
+		
+				for(int i=1;i<=5;i++) {
+					for(int j=1;j<=i;j++) {
+						System.out.print(" ");
+					}
+					for (int j=1;j<=5;j++) {
+						if(i==1||j==1||i==5||j==5) {
+						System.out.print("*");
+					}else
+						System.out.print(" ");
+					}
+					System.out.println();
+				}
+			}
+		}
+
+pattern 6:
+
+public class Pattern{
+	public static void main(String[] args) {
+		
+				for(int i=1;i<=5;i++) {
+					for(int j=i;j<=5;j++) {
+						System.out.print(" ");
+					}
+					for (int j=1;j<=5;j++) {
+						if(i==1||j==1||i==5||j==5) {
+						System.out.print("*");
+					}else
+					s	System.out.print(" ");
+					}
+					System.out.println();
+				}
+			}
+		}
+
+pattern 7:
+
+public class Demo{
+	public static void main(String[]args) {
+		Scanner sc = new Scanner(System.in);
+		 int rows = sc.nextInt();
+		 
+	        for (int i = 1; i <= rows; i++) {
+	        	
+    	  for (int j = 1; j <=rows; j++) { 
+    		  if(j<=5)
+    		  if(j==1||j==i||i+j==rows+1) {
+	        	  System.out.print("* ");
+	          }else           
+	            System.out.print("  ");         
+		}
+    	  System.out.println();
+        	  }
+
+Pattern 8:
+
+public class Demo{
+	public static void main(String[]args) {
+		 int rows = 9;
+		 
+	        for (int i = 1; i <= rows; i++) {
+	        	
+    	  for (int j = 1; j <=rows; j++) { 
+   		  if(j<=5)
+    		  if(j==5||i+j==6||i-j==4) {
+	        	  System.out.print("* ");
+	          }else           
+	            System.out.print("  ");         
+		}
+    	  System.out.println();
+        	  }
+	}
+}
+	
+Pattern 11:
+
+public class Pattern{
+	public static void main(String[] args) {
+		for(int i=0;i<5;i++) {
+			for (int j=0;j<=4;j++) {
+				System.out.print("*");
+			}System.out.println();
+		}
+	}
+}
+
+pattern 12:
+
+public class Pattern{
+	public static void main(String[] args) {
+		for(int i=1;i<=5;i++) {
+			for (int j=1;j<=5;j++) {
+				if(i==1||j==1||i==5||j==5) {
+				System.out.print("*");
+			}else
+				System.out.print(" ");
+			}
+			System.out.println();
+		}
+	}
+}
+
+
